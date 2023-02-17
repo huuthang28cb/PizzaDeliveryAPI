@@ -1,8 +1,8 @@
 FROM python:3.9
 WORKDIR /usr/src/personalised_nudges
 
-# RUN python -m venv venv
-# CMD ["source venv/Scripts/activate"]
+RUN python -m venv venv
+CMD ["source venv/Scripts/activate"]
 
 RUN pip install --upgrade pip
 COPY ./app ./app

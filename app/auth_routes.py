@@ -1,7 +1,7 @@
 from fastapi import APIRouter,status
-from database import Session,engine
-from schemas import SignUpModel
-from models import User
+from app.database import Session,engine
+from app.schemas import SignUpModel
+from app.models import User
 from fastapi.exceptions import HTTPException
 from werkzeug.security import generate_password_hash
 
